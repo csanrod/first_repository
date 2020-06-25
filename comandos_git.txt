@@ -1,0 +1,38 @@
+cuando lanzas el primer git commit, primero debes configurar tu correo y tu nombre
+  >>git config --global user.email "tuemail@example.com"
+  >>git config --global user.name "tu nombre"
+info asociada a los cambios realizados en este proyecto
+
+  >>git log
+sirve para ver todos los commits que hemos creado, muestra lo siguiente:
+  commit 215aea61210dab82ce75b081e21174758d3c2589 (HEAD -> master)
+  Author: csanrod <c.sanchezro.2018@alumnos.urjc.es>
+  Date:   Sun Feb 2 12:12:11 2020 +0100
+
+      mi primer commit
+
+  >>git checkout -- <nombre_del_archivo>
+revierte los cambios realizados
+
+  >>git diff <nombre_archivo_modificado>
+permite ver las diferencias o los cambios realizados en dicho archivo
+
+HEAD -> master, rama donde estamos
+
+Para ignorar una carpeta dentro del proyecto que estamos realizando, hay que
+crear un archivo .gitignore
+
+*>> git add . agrega todos los archivos
+
+Ramas
+  >>git branch
+Muestra las ramas del proyecto, es decir versiones alternativas del código.
+Ademas te indica en que rama te encuentras.
+  >>git branch <nombre_rama>
+Crea una rama con ese nombre
+  >>git checkout <nombre_rama>
+Te permite ir a la rama nombre_rama
+
+Github
+  >>git remote add origin <URL del repositorio online>
+  >>git push -u origin master
